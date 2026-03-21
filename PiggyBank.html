@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PiggyBank</title>
+    <link
+      rel="shortcut icon"
+      href="./img/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-div">
+        <img class="logo" src="./img/logo.png" alt="" />
+
+        <h2 class="logo-titulo">PiggyBank</h2>
+      </div>
+      <div class="usuario-div">
+        <img class="img-usuario" src="./img/usuario.png" alt="" />
+        <img class="svg" src="./img/icons/icon-icons.svg" alt="" />
+      </div>
+    </header>
+
+    <main>
+      <div class="cards-div">
+        <div class="card1">
+          <h2>Entrada</h2>
+          <h2 id="resultado-entrada">R$ 0,00</h2>
+        </div>
+
+        <div class="card2">
+          <h2>Saida</h2>
+          <h2 id="resultado-saida">R$ 0,00</h2>
+        </div>
+
+        <div class="card3">
+          <h2>Total</h2>
+          <h2 id="resultado-total">R$ 0,00</h2>
+        </div>
+      </div>
+
+      <div class="div-conteudos">
+        <div class="nova-transacao-div">
+          <h1>Nova Transação</h1>
+          <input
+            class="input-transacao"
+            type="text"
+            placeholder="Nome da Transação"
+            name=""
+            id=""
+          />
+          <input
+            class="input-transacao"
+            type="text"
+            placeholder="Valor da Transação"
+            name=""
+            id=""
+          />
+          <input
+            class="input-transacao"
+            type="text"
+            placeholder="Categoria"
+            name=""
+            id=""
+          />
+
+          <input class="botão-adicionar" type="button" value="Adicionar" />
+        </div>
+
+        <div class="historico-div">
+          <h1>Histórico de Transações</h1>
+          <div class="resultado-lista">
+            <div class="resultado">
+              <h1 id="categoria-resultado">Salario</h1> <h1 id="valor">R$ 400,00</h1>
+              <input class="excluir" type="button" value="X">
+            </div>
+
+             <div class="resultado">
+              <h1 id="categoria-resultado">Salario</h1> <h1 id="valor">R$ 400,00</h1>
+              <input class="excluir" type="button" value="X">
+            </div>
+             <div class="resultado">
+              <h1 id="categoria-resultado">Salario</h1> <h1 id="valor">R$ 400,00</h1>
+              <input class="excluir" type="button" value="X">
+            </div>
+            <div class="resultado">
+              <h1 id="categoria-resultado">Salario</h1> <h1 id="valor">R$ 400,00</h1>
+              <input class="excluir" type="button" value="X">
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

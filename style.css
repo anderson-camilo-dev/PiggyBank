@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: normal 24pt Arial;
+  background: #2a2d34;
+}
+
+main{
+  margin: 5%;
+  
+}
+.svg {
+  width: 24px;
+  margin: auto;
+}
+
+/* HEADER*/
+
+header {
+  background: #2b2e35;
+  border: 2px solid #4b4f59;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: center;
+}
+.logo-div {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 10%;
+  min-width: 150px;
+  height: 40px;
+  padding: 0 10px;
+  margin: 10px 40px;
+  align-content: center;
+}
+.logo {
+  width: 80%;
+  height: auto;
+}
+
+.logo-titulo {
+  color: white;
+  font: normal 1.3rem Arial;
+  font-weight: 700;
+  margin: auto;
+  text-align: center;
+
+}
+
+.usuario-div{
+align-content: center;
+display: grid;
+gap: 24px;
+margin-right: 24px;
+grid-template-columns: auto auto;
+}
+.img-usuario {
+  width: 40px;
+  height: 40px;
+  border-radius: 34px;
+  margin: auto;
+  
+}
+
+/*CARDS DE ENTRADA, SAIDA E TOTAL */
+
+.cards-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2%;
+}
+
+.card1{
+  background: #63aaae;
+  color: white;
+  text-align: center;
+  font: normal 12pt Arial;
+  border-radius: 12px;
+}
+
+.card2{
+  background: #ef8a82;
+  color: white;
+  text-align: center;
+  font: normal 12pt Arial;
+  border-radius: 12px;
+}
+
+.card3{
+  background: #aa95d0;
+  color: white;
+  text-align: center;
+  font: normal 12pt Arial;
+  border-radius: 12px;
+}
+
+
+/*NOVA TRANSAÇÃO*/
+
+.div-conteudos {
+  margin: 80px 0;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr  2fr;
+}
+.nova-transacao-div {
+  border: solid 2px #4b4f59 ;
+  margin:  0;
+  border-radius: 16px;
+  display: grid;
+  padding: 20px 20px;
+  gap: 20px;
+  color: white;
+  font: normal 16pt Arial;
+}
+
+.input-transacao{
+  color: #6b707f;
+  padding: 10px;
+  border-radius: 10px;
+  background: transparent;
+  border: solid 2px  #4b4f5e;
+}
+
+.botão-adicionar{
+  margin: auto;
+  padding: 10px 15px;
+  border-radius: 24px;
+  color: white;
+  background-color: #5caa9c;
+  border: #2a2d34;
+}
+
+.nova-transacao-div h1{
+  font: normal 20pt Arial;
+}
+
+.historico-div {
+  border: solid 2px #4b4f59 ;
+  margin:  0;
+  border-radius: 16px;
+  padding: 20px 20px;
+  gap: 20px;
+  color: white;
+ 
+}
+
+.historico-div h1{
+  font: normal 24pt Arial;
+  font-size: 26px;
+}
+
+.resultado-lista{
+  display: grid;
+  gap: 24px;
+  border: 2px black;
+  width: 100%;
+  height: 250px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.resultado{
+  padding: 0 10px;
+  background: #f1f2f6;
+  color: #2a2d34;
+  display: grid; 
+  
+  grid-template-columns: 4fr 2fr 1fr;
+  gap: 10px;
+  border-radius: 12px;
+  font: normal 16pt Arial;
+}
+
+.excluir{
+  border-radius: 4px;
+  border: transparent;
+  background: #e15953;
+  padding: 5px;
+  margin: auto;
+}
+
+#valor{
+  font: normal 12pt Arial;
+  margin: auto;
+}
+
+/*GRAFICO FEITO PELO CHAT*/
