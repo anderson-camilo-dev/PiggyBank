@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PiggyBank</title>
@@ -12,7 +11,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="./script.js"></script>
   </head>
-  <body>
+  <body >
     <header>
       <div class="logo-div">
         <img class="logo" src="./img/logo.png" alt="" />
@@ -28,18 +27,21 @@
     <main>
       <div class="cards-div">
         <div class="card1">
-          <h2>Entrada</h2>
-          <h2 id="resultado-entrada">R$ 0,00</h2>
+          <h2>Saldo</h2>
+          <h2 id="resultado-entrada">R$ <span id="resultado-entrada">0,00</span></h2>
         </div>
 
         <div class="card2">
-          <h2>Saida</h2>
-          <h2 id="resultado-saida">R$ 0,00</h2>
+          <h2>Dispesas</h2>
+          <h2 id="resultado-saida">R$ <span id="resultado-saida">0,00</span></h2>
         </div>
 
         <div class="card3">
-          <h2>Total</h2>
-          <h2 id="resultado-total">R$ 0,00</h2>
+          <h2>Saldo final</h2>
+          <div class="resultado-final">
+            <img class="img-seta" src="" alt="">
+          <h2 id="resultado-total"> R$ <span id="resultado-total">0,00</span></h2>
+          </div>
         </div>
       </div>
 
@@ -47,50 +49,49 @@
         <div class="nova-transacao-div">
           <h1>Nova Transação</h1>
           <input
+          
             class="input-transacao"
             type="text"
             placeholder="Nome da Transação"
-            name=""
-            id=""
+            name="nome-transacao"
+            id="nome-transacao"
           />
           <input
             class="input-transacao"
-            type="text"
+            type="number"
             placeholder="Valor da Transação"
             name=""
-            id=""
+            id="valor-transacao"
           />
           <input
             class="input-transacao"
             type="text"
             placeholder="Categoria"
             name=""
-            id=""
+            id="categoria-transacao"
           />
-
-          <input class="botão-adicionar" type="button" value="Adicionar" />
+          <div class="div-opcoes-1">
+           <p class="opcoesP">Adicionar: </p>
+          <div class="div-opcoes">
+            <div>
+          <input class="opcoes" type="radio" name="opcao" id="entrada" value="Adicionar Saldo" checked>
+          <label for="entrada" > Saldo</label>
+          </div>
+          <div>
+          <input class="opcoes" type="radio" name="opcao" id="saida" value="Adicionar Dispesa">
+          <label for="saida"> Dispesa</label>
+          </div>
+          </div>
+</div>
+          <input class="botão-adicionar" type="button" value="Adicionar" onclick="transacoes.Adicionar()"  />
         </div>
 
         <div class="historico-div">
           <h1>Histórico de Transações</h1>
           <div class="resultado-lista">
-            <div class="resultado">
-              <h1 id="categoria-resultado">Salario</h1> <h1 id="valor">R$ 400,00</h1>
-              <input class="excluir" type="button" value="X">
-            </div>
+           
 
-             <div class="resultado">
-              <h1 id="categoria-resultado">Salario</h1> <h1 id="valor">R$ 400,00</h1>
-              <input class="excluir" type="button" value="X">
-            </div>
-             <div class="resultado">
-              <h1 id="categoria-resultado">Salario</h1> <h1 id="valor">R$ 400,00</h1>
-              <input class="excluir" type="button" value="X">
-            </div>
-            <div class="resultado">
-              <h1 id="categoria-resultado">Salario</h1> <h1 id="valor">R$ 400,00</h1>
-              <input class="excluir" type="button" value="X">
-            </div>
+            <p class="texto-vazio">nenhuma Transação feita ainda</p>
 
             
           </div>
